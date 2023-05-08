@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TeploGaz</string>
+
+
+    <string name="ustrBtn">Устройства</string>
+    <string name="materialBtn">Материалы</string>
+    <string name="opisBtn">opisBtn</string>
+    <string name="blagoBtn">Благоустройства</string>
+    <string name="vneshBtn">Внешнее устройство</string>
+    <string name="leninBtn">Ленинградка</string>
+    <string name="samotekBtn">Самотек</string>
+    <string name="kanalBtn">2-х канальный</string>
+    <string name="Truba">Трубы</string>
+
+
+    <string name="opisanieLenin">ОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕ</string>
+    <string name="opisanieSamotek">2-х ОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕ</string>
+    <string name="opisanieKanal">2-х ОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕОПИСАНИЕ</string>
+    <string name="opisanieTruby">PIPE PIPE PIPE PIPE PIPE PIPE PIPE PIPE PIPE PIPE PIPE PIPE PIPE PIPE </string>
+
+</resources>
