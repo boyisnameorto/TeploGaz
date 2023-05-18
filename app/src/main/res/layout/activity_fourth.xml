@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFE870"
     tools:context=".FourthActivity">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/blagoBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/zakrugkray"
+        android:fontFamily="@font/qwe"
         android:text="Благоустройства"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,11 +21,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.437" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/vneshBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:background="@drawable/zakrugkray"
+        android:fontFamily="@font/qwe"
         android:text="Внешнее устройство"
         app:layout_constraintEnd_toEndOf="@+id/blagoBtn"
         app:layout_constraintStart_toStartOf="@+id/blagoBtn"

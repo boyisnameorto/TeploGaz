@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFE870"
     tools:context=".FiveActivity">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/leninBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/zakrugkray"
+        android:fontFamily="@font/qwe"
         android:text="@string/leninBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,21 +20,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.516" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/kanalBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
+        android:background="@drawable/zakrugkray"
+        android:fontFamily="@font/qwe"
         android:text="@string/kanalBtn"
         app:layout_constraintEnd_toEndOf="@+id/samotekBtn"
         app:layout_constraintStart_toStartOf="@+id/samotekBtn"
         app:layout_constraintTop_toBottomOf="@+id/samotekBtn" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/samotekBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
+        android:background="@drawable/zakrugkray"
+        android:fontFamily="@font/qwe"
         android:text="@string/samotekBtn"
         app:layout_constraintEnd_toEndOf="@+id/leninBtn"
         app:layout_constraintStart_toStartOf="@+id/leninBtn"

@@ -1,14 +1,17 @@
 package com.example.teplogaz;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class SecondActivity extends AppCompatActivity {
-    Button opisBtn;
+    AppCompatButton opisBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +20,21 @@ public class SecondActivity extends AppCompatActivity {
 
 
         opisBtn = findViewById(R.id.opisBtn);
+
+        // Создание цветового состояния для нажатия
+        ColorStateList colorStateList = new ColorStateList(
+                new int[][]{
+                        new int[]{android.R.attr.state_pressed},
+                        new int[]{}
+                },
+                new int[]{
+                        Color.YELLOW, // Цвет текста для состояния нажатия (синий)
+                        Color.BLACK // Цвет текста для обычного состояния (белый)
+                }
+        );
+// Установка цветового состояния для текста кнопки
+        opisBtn.setTextColor(colorStateList);
+
 
         opisBtn.setOnClickListener(new View.OnClickListener() {
             @Override

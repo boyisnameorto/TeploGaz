@@ -1,15 +1,18 @@
 package com.example.teplogaz;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 public class FourthActivity extends AppCompatActivity {
-Button blagoBtn, vneshBtn;
+    AppCompatButton blagoBtn, vneshBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +20,22 @@ Button blagoBtn, vneshBtn;
 
         blagoBtn = findViewById(R.id.blagoBtn);
         vneshBtn = findViewById(R.id.vneshBtn);
+
+// Создание цветового состояния для нажатия
+        ColorStateList colorStateList = new ColorStateList(
+                new int[][]{
+                        new int[]{android.R.attr.state_pressed},
+                        new int[]{}
+                },
+                new int[]{
+                        Color.YELLOW, // Цвет текста для состояния нажатия (синий)
+                        Color.BLACK // Цвет текста для обычного состояния (белый)
+                }
+        );
+// Установка цветового состояния для текста кнопки
+        blagoBtn.setTextColor(colorStateList);
+        vneshBtn.setTextColor(colorStateList);
+
 
         blagoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
